@@ -53,15 +53,21 @@ namespace Line_Computation
 
             Console.WriteLine("Length of Line:" + Length1);
 
-            //Check the equality of 2 lines
+            //Check the equality of 2 lines.
              bool equalLength = Length.Equals(Length1);
             if (equalLength == true)
             {
                 Console.WriteLine("Length of line1 and Line2 are equal");
             }
-            else
+            //length of line1 is greater.
+            else if(Length >Length1)
             { 
-                Console.WriteLine("Length of line1 and line2 are unequal");
+                Console.WriteLine("Length of line1 is greater");
+            }
+            //length of line2 is greater.
+            else  
+            {
+                Console.WriteLine("Length of Line2 is greater");
             }
 
 
